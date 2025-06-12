@@ -1,0 +1,348 @@
+---
+title: "Auto Question Generation Algorithm for Searching and Sorting Algorithms"
+author: "Rushikesh Yemul"
+format: html
+toc: true
+date: 2025-06-12
+---
+
+## 1. Introduction
+
+This document presents the evaluation methodology and design logic behind the **Auto Question Generation (AQG) Algorithm** built for the topic *Searching and Sorting Algorithms*. The AQG system is capable of generating multiple question types (conceptual, trace-based, numerical, code-based) and classifying them by **difficulty levels**: **Level 1 (Easy)**, **Level 2 (Medium)**, and **Level 3 (Hard)**.
+
+Supported sub-algorithms include (but are not limited to):
+- Binary Search
+- Linear Search
+- Bubble Sort
+- Selection Sort
+- Insertion Sort
+- Merge Sort
+- Quick Sort
+- Heap Sort
+
+## 2. Objective
+
+The AQG algorithm aims to:
+
+- Automatically generate valid, varied, and meaningful questions on key searching and sorting algorithms.
+- Distinguish difficulty through logic complexity, numeric depth, and conceptual abstraction.
+- Allow scalable template extension for additional algorithms.
+
+## 3. What is a Topic?
+
+In the context of **Auto Question Generation (AQG)** for algorithmic learning, a **topic** is the smallest conceptual or procedural unit around which meaningful and varied questions can be generated.
+
+- Binary Search
+- Linear Search
+- Bubble Sort
+- Selection Sort
+- Insertion Sort
+- Merge Sort
+- Quick Sort
+- Heap Sort
+
+## 4. How Do I Identify Topics of a Domain?
+
+As stated earlier, **topics** are the smallest conceptual or procedural units around which questions can be generated. To identify the topics of a specific domain, we need to break down its concepts into levels of increasing complexity.
+
+Let us consider the domain **Searching and Sorting Algorithms** as an example. To identify its topics, we ask the following:
+
+- What are the **Foundational** Level Topics (FLT) of Searching and Sorting Algorithms?
+- What are the **Intermediate** Level Topics (ILT) of Searching and Sorting Algorithms?
+- What are the **Advanced** Level Topics (ALT) of Searching and Sorting Algorithms?
+
+### A Simple Method to Identify Topics
+
+A quick way to identify these topics is to use **ChatGPT or a similar LLM tool**. For example, the following prompt was submitted to ChatGPT:
+
+> _“I am working on auto-question generation algorithms to test learners’ understanding of the Searching and Sorting Algorithms domain. Please help me identify foundational, intermediate, and advanced-level topics in Searching and Sorting Algorithms. Please provide the tables in markdown format.”_
+
+### 4.1 Level 1 (Foundational)
+
+| Algorithm          | Question Type | Focus Areas                           | Example Topics                                       |
+| ------------------ | ------------- | ------------------------------------- | ---------------------------------------------------- |
+| **Binary Search**  | TFQ           | Sorted array requirement, complexity  | "Binary Search works on unsorted arrays"             |
+|                    | MCQ           | Time complexity, mid calculation      | "Best case complexity: O(1), O(log n), O(n)"         |
+|                    | MTQ           | Implementation concepts               | "Sorted Array ↔ Precondition"                        |
+|                    | ECQ           | Pointer updates, condition completion | "if arr\[mid] < key: \_\_\_\_ = mid + 1"             |
+|                    | NQ            | Step counting, comparisons            | "Max steps for array size 64?"                       |
+| **Linear Search**  | TFQ           | Unsorted data, sequential nature      | "Linear Search checks every element"                 |
+|                    | MCQ           | Time complexity scenarios             | "Worst case: O(1), O(n), O(log n)"                   |
+|                    | MTQ           | Matching concepts                     | "Sequential ↔ Element Checking"                      |
+|                    | ECQ           | Loop and return conditions            | "for i in range(len(arr)): if arr\[i] == \_\_\_\_"   |
+|                    | NQ            | Comparison count                      | "Comparisons to find element at position 5?"         |
+| **Bubble Sort**    | TFQ           | Swapping, stability                   | "Bubble Sort is stable sorting algorithm"            |
+|                    | MCQ           | Passes, swapping behavior             | "Passes for n elements: n, n-1, n²"                  |
+|                    | MTQ           | Sorting phase matching                | "Adjacent Swapping ↔ Bubble Mechanism"               |
+|                    | ECQ           | Swap logic, loops                     | "if arr\[j] > arr\[j+1]: \_\_\_\_"                   |
+|                    | NQ            | Swap count                            | "Swaps in worst case for 5 elements?"                |
+| **Selection Sort** | TFQ           | Minimum finding, swap consistency     | "Exactly n-1 swaps"                                  |
+|                    | MCQ           | Stability, comparisons                | "Selection Sort is: Stable, Unstable, Adaptive"      |
+|                    | MTQ           | Algorithm phase mapping               | "Find Minimum ↔ Selection Strategy"                  |
+|                    | ECQ           | Logic for min element                 | "min\_idx = \_\_\_\_; swap(arr\[i], arr\[min\_idx])" |
+|                    | NQ            | Comparison count per pass             | "Comparisons in pass 1 for array size 8?"            |
+| **Insertion Sort** | TFQ           | Adaptive, shifting mechanism          | "Efficient for small arrays"                         |
+|                    | MCQ           | Best case, stability                  | "Best case: O(1), O(n), O(n²)"                       |
+|                    | MTQ           | Shifting concept                      | "Element Shifting ↔ Insertion Process"               |
+|                    | ECQ           | While loop insertion                  | "while j >= 0 and arr\[j] > \_\_\_\_"                |
+|                    | NQ            | Shift count, best case                | "Shifts for inserting at position 0?"                |
+
+---
+
+### 4.2 Level 2 (Intermediate)
+
+| Algorithm         | Question Type | Focus Areas                          | Example Topics                                         |
+| ----------------- | ------------- | ------------------------------------ | ------------------------------------------------------ |
+| **Binary Search** | TFQ           | Recursive/iterative forms            | "Binary Search can be implemented recursively"         |
+|                   | MCQ           | Space complexity                     | "Recursive space: O(1), O(log n), O(n)"                |
+|                   | MTQ           | Recursive concept matching           | "Recursive ↔ Function Calls Itself"                    |
+|                   | ECQ           | Recursive base/termination           | "return binarySearch(arr, \_\_\_\_, high, key)"        |
+|                   | NQ            | Recursion depth, average comparisons | "Depth for array size 1024?"                           |
+| **Linear Search** | TFQ           | Sentinel method                      | "Sentinel reduces comparisons"                         |
+|                   | MCQ           | Optimizations                        | "Sentinel search eliminates: bounds check, comparison" |
+|                   | MTQ           | Optimization matching                | "Sentinel Value ↔ Boundary Elimination"                |
+|                   | ECQ           | Sentinel logic                       | "arr\[n] = key; while arr\[i] != \_\_\_\_"             |
+|                   | NQ            | Expected comparisons                 | "Expected comparisons for successful search?"          |
+| **Merge Sort**    | TFQ           | Performance guarantees               | "Merge Sort always takes O(n log n)"                   |
+|                   | MCQ           | Space complexity, merge process      | "Space: O(1), O(log n), O(n)"                          |
+|                   | MTQ           | Divide and conquer                   | "Divide Phase ↔ Array Splitting"                       |
+|                   | ECQ           | Merge logic                          | "while i < len(left) and j < len(right): \_\_\_\_"     |
+|                   | NQ            | Recursion levels                     | "Levels of recursion for 16 elements?"                 |
+| **Quick Sort**    | TFQ           | Pivot role                           | "Depends on pivot selection"                           |
+|                   | MCQ           | Worst case scenarios                 | "Worst case: random pivot, sorted array, median pivot" |
+|                   | MTQ           | Pivot strategies                     | "Random Pivot ↔ Average Performance"                   |
+|                   | ECQ           | Partitioning logic                   | "if arr\[j] < pivot: swap(arr\[i], \_\_\_\_)"          |
+|                   | NQ            | Partition comparisons                | "Worst case comparisons for n elements?"               |
+| **Heap Sort**     | TFQ           | Heap property, in-place nature       | "Heap Sort requires additional space"                  |
+|                   | MCQ           | Heapify directions                   | "Max heapify: up, down, both directions"               |
+|                   | MTQ           | Heap process                         | "Build Heap ↔ Bottom-up Heapify"                       |
+|                   | ECQ           | Parent-child relationship            | "largest = \_\_\_\_; if arr\[left] > arr\[largest]"    |
+|                   | NQ            | Heap height, heapify calls           | "Height for 15 elements?"                              |
+
+---
+
+### 4.3 Level 3 (Advanced)
+
+| Algorithm         | Question Type | Focus Areas               | Example Topics                                             |
+| ----------------- | ------------- | ------------------------- | ---------------------------------------------------------- |
+| **Binary Search** | TFQ           | Variants, boundary cases  | "Find insertion point for duplicates"                      |
+|                   | MCQ           | Variant logic             | "Lower bound finds: first, last, insert point"             |
+|                   | MTQ           | Search variant matching   | "Upper Bound ↔ First Greater Element"                      |
+|                   | ECQ           | Variant implementation    | "while low < high: if arr\[mid] >= key: \_\_\_\_"          |
+|                   | NQ            | Iteration analysis        | "Worst case iterations for lower bound?"                   |
+| **Linear Search** | TFQ           | Parallelism, cache        | "Parallelizable search"                                    |
+|                   | MCQ           | Cache-friendly strategies | "Sequential access, random access, binary jumps"           |
+|                   | MTQ           | Workload division         | "Parallel Search ↔ Work Distribution"                      |
+|                   | ECQ           | Parallel logic            | "thread\_result = search(arr\[start:\_\_\_\_], key)"       |
+|                   | NQ            | Speedup analysis          | "Speedup with 4 threads on 1000 elements?"                 |
+| **Merge Sort**    | TFQ           | External sorting          | "Good for external sorting"                                |
+|                   | MCQ           | Bottom-up merge           | "Eliminates recursion, merging, space usage"               |
+|                   | MTQ           | Variant implementation    | "External Sorting ↔ Disk-based Merging"                    |
+|                   | ECQ           | Bottom-up logic           | "for size in range(1, n, \_\_\_\_): merge\_subarrays()"    |
+|                   | NQ            | Disk operations           | "Disk I/O for 1M records?"                                 |
+| **Quick Sort**    | TFQ           | Hybrids, 3-way partition  | "Introsort uses Heap Sort in worst case"                   |
+|                   | MCQ           | 3-way partitioning        | "Handles duplicates, sorted arrays"                        |
+|                   | MTQ           | Advanced sort strategies  | "Dual Pivot ↔ Java's Arrays.sort()"                        |
+|                   | ECQ           | 3-way logic               | "if arr\[i] == pivot: i++; elif arr\[i] < pivot: \_\_\_\_" |
+|                   | NQ            | Cutoff thresholds         | "Insertion sort cutoff for small subarrays?"               |
+| **Heap Sort**     | TFQ           | Cache performance         | "Heap Sort has poor cache locality"                        |
+|                   | MCQ           | Heapify optimization      | "Bottom-up is: faster, slower, same as top-down"           |
+|                   | MTQ           | Cache access pattern      | "Cache Locality ↔ Memory Access Pattern"                   |
+|                   | ECQ           | Heapify optimization loop | "for i in range(n//2 - 1, -1, -1): \_\_\_\_"               |
+|                   | NQ            | Cache miss comparison     | "Cache misses vs Quick Sort?"                              |
+
+
+## 5. How Do I Seek Elaboration On a Topic?
+
+In the context of **Auto-Question Generation (AQG) for Searching and Sorting Algorithms**, seeking elaboration means asking for deeper insights into how or why a particular concept, procedure, or variation works.
+
+To support learners or developers refining AQG systems, here are effective strategies to seek elaboration:
+
+### 5.1 Ask for Step-by-Step Breakdown  
+**Example:**  
+> “Can you explain step-by-step how Merge Sort divides and merges a list of 8 elements?”
+
+This helps understand the internal **recursive mechanics** and **merge operations**.
+
+---
+
+### 5.2 Use Algorithm-Specific Clarification Prompts  
+**Examples:**  
+- “How does Binary Search behave when the key appears multiple times?”  
+- “Why does Quick Sort perform poorly on already sorted arrays?”
+
+These prompts encourage **deeper insights into edge cases** and **performance characteristics**.
+
+---
+
+### 5.3 Request Trace-Based or Visual Explanation  
+**Example:**  
+> “Can you show a dry run of Insertion Sort on the array [5, 2, 4, 6, 1, 3]?”
+
+Tracing helps reveal **internal state changes** and improves **implementation clarity**.
+
+---
+
+These prompts enhance **template design** and help classify questions accurately.
+
+---
+
+
+## 6. A Practical Example
+
+**Problem:**  
+Generate a question that assesses a learner’s understanding of how **Binary Search** operates on a sorted array using the **iterative approach**.
+
+---
+
+#### 🔹 Input Details:
+
+- **Input array:** `arr = [2, 4, 6, 8, 10, 12, 14, 16]`  
+- **Key to find:** `10`  
+- **Search method:** Iterative Binary Search
+
+---
+
+#### 🔹 Step-by-Step Execution:
+
+| Step | low | high | mid | arr[mid] | Comparison     | Action             |
+|------|-----|------|-----|----------|----------------|--------------------|
+| 1    | 0   | 7    | 3   | 8        | 10 > 8         | Search right half  |
+| 2    | 4   | 7    | 5   | 12       | 10 < 12        | Search left half   |
+| 3    | 4   | 4    | 4   | 10       | 10 == 10 (match) | ✅ Found at index 4 |
+
+---
+
+#### ✅ Final Result:
+
+Key `10` is found at **index 4** using iterative binary search.
+
+
+## 7. How This Structure Supports Auto-Question Generation
+
+Each algorithm supports various question types as demonstrated in your Binary Search generator:
+
+| **Question Type** | **Purpose**                                              |
+|-------------------|----------------------------------------------------------|
+| **TFQ** (True/False)        | Test concept clarity                                 |
+| **MCQ** (Multiple Choice)   | Assess knowledge of implementation and complexity    |
+| **MTQ** (Match the Following)| Match algorithm parts or terms to their descriptions |
+| **ECQ** (Complete the Code) | Test code understanding and memory                   |
+| **NQ** (Numeric Question)   | Apply numeric reasoning (e.g., comparisons, steps)   |
+
+
+### 7.1 Examples of Each Question Type
+
+In the following, an example is provided for each question type in the context of **Binary Search**.
+
+| **Question Type** | **Example** |
+|-------------------|-------------|
+| **TFQ** (True/False Question) | Binary Search requires the input array to be sorted. <br>**Answer:** True |
+| **MCQ** (Multiple Choice Question) | What is the worst-case time complexity of Binary Search?<br>(a) O(n) (b) O(log n) (c) O(1) (d) O(n log n)<br>**Answer:** (b) |
+| **MTQ** (Match the Following) | Match the concept with its description:<br><br>**Incorrect Matching:**<br>• Mid Calculation → (b) When key not found<br>• Worst Case → (c) Array must be sorted<br>• Precondition → (a) `(low + high) // 2`<br><br> **Corrected Matching:**<br>• Mid Calculation → (a) `(low + high) // 2`<br>• Worst Case → (b) When key not found<br>• Precondition → (c) Array must be sorted |
+| **ECQ** (Complete the Code Question) | Complete the missing part in this Binary Search code:<br><br>
+```python
+while low <= high:
+    mid = (low + high) // 2
+    if arr[mid] == key:
+        return mid
+    elif arr[mid] < key:
+        low = _____
+    else:
+        high = mid - 1
+```
+<br>**Answer:** `mid + 1` |<br><br>
+ **NQ** (Numeric Question) | For an array of 8 elements, what is the maximum number of comparisons Binary Search will make in the worst case?<br>**Answer:** 3  
+
+
+### 7.2 Types of Knowledge Tested
+
+Each question type is best suited for testing specific kinds of knowledge in the context of Binary Search & Other Algorithms.
+
+| **Type of Knowledge**             | **Best-Suited Question Types**       |
+|----------------------------------|--------------------------------------|
+
+| **Factual** <br>(e.g., algorithm name, time complexity, mid formula) | TFQ, ECQ, MTQ, MCQ |
+| **Conceptual** <br>(e.g., sorted array requirement, divide and conquer, base condition) | MCQ, TFQ, NQ, MTQ |
+| **Procedural** <br>(e.g., tracing, implementing iterative steps) | ECQ,  |
+
+
+
+## 8. Python Templates for Auto-Generating Questions on Binary Search
+
+Each type of question serves a specific learning goal—whether factual recall, conceptual clarity, or procedural understanding.
+
+---
+
+### 8.1 True/False Question (TFQ)
+
+```python
+def generate_tfq():
+    return {
+        "question": "True or False: Binary Search only works on sorted arrays.",
+        "answer": "True"
+    }
+```
+## 8.2 Multiple Choice Question (MCQ)
+```python
+def generate_mcq():
+    return {
+        "question": "What is the best case time complexity of Binary Search?",
+        "options": ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+        "answer": "O(1)"
+    }
+
+```
+## 8.3 Matching Type Question (MTQ)
+```python
+"MTQ": [
+            lambda: {
+                "question": "Match the term to its meaning in Binary Search:",
+                "pairs": {
+                    "low": "Ending index",
+                    "high": "Middle index",
+                    "mid": "Starting index"
+                },
+                "answer": {
+                    "low": "Starting index",
+                    "high": "Ending index",
+                    "mid": "Middle index"
+                }
+            }
+```
+
+## 8.4 Expression Completion Question (ECQ)
+```python
+def generate_ecq():
+    return {
+        "question": "Complete the condition: while low <= high: ... if arr[mid] == key: return ____",
+        "answer": "mid"
+    }
+
+```
+
+## 8.5 Numeric Question (NQ)
+```python
+import random
+
+"NQ": [
+    lambda: (lambda n: {
+        "question": f"What is the maximum number of comparisons in Binary Search for an array of size {n}?",
+        "answer": str(n.bit_length())
+    })(random.randint(6, 13))
+]
+
+# Then let’s say the random number picked is 10. The binary representation of 10 is 1010, which is 4 bits — so:
+# Question: What is the maximum number of comparisons in Binary Search for an array of size 10
+# - Answer: 4
+
+```
+
+## 7. Conclusion
+
+The AQG system for Searching and Sorting Algorithms demonstrates:
+- Clear classification of difficulty levels
+- Flexible templates per sub-topic (searching or sorting)
+- Capability to scale across domains
+
+This approach ensures variety, customizability, and helps learners deeply understand the Topic Searching and Sorting Algorithms.
