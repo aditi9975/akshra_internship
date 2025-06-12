@@ -552,103 +552,103 @@ templates = {
             lambda: (lambda n: {
                 "question": f"What is the maximum number of comparisons in Binary Search for an array of size {n}?",
                 "answer": str(n.bit_length())
-            })(random_choice([16, 32, 64])),
+            })(random_choice([8, 10, 12])),
             lambda: (lambda n: {
                 "question": f"For array size {n}, how many steps does worst-case Binary Search take?",
                 "answer": str(n.bit_length())
-            })(random_choice([16, 32, 64])),
+            })(random_choice([8, 10, 12])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the minimum number of comparisons in Binary Search?",
                 "answer": "1"
-            })(random_choice([16, 32, 64])),
+            })(random_choice([8, 10, 12])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the best-case time complexity of Binary Search?",
                 "answer": "O(1)"
-            })(random_choice([16, 32, 64])),
+            })(random_choice([8, 10, 12])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the worst-case time complexity of Binary Search?",
                 "answer": "O(log n)"
-            })(random_choice([16, 32, 64])),
+            })(random_choice([8, 10, 12])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the average number of comparisons in Binary Search?",
                 "answer": str(round(n.bit_length() / 2))
-            })(random_choice([16, 32, 64])),
+            })(random_choice([8, 10, 12])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the maximum depth of recursion in Binary Search?",
                 "answer": str(n.bit_length())
-            })(random_choice([16, 32, 64])),
+            })(random_choice([8, 10, 12])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the minimum depth of recursion in Binary Search?",
                 "answer": "1"
-            })(random_choice([16, 32, 64])),
+            })(random_choice([8, 10, 12])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the maximum number of elements checked in Binary Search?",
                 "answer": str(n.bit_length())
-            })(random_choice([16, 32, 64])),
+            })(random_choice([8, 10, 12])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the minimum number of elements checked in Binary Search?",
                 "answer": "1"
-            })(random_choice([16, 32, 64])),
+            })(random_choice([8, 10, 12])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the maximum number of recursive calls in Binary Search?",
                 "answer": str(n.bit_length())
-            })(random_choice([16, 32, 64])),
+            })(random_choice([8, 10, 12])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the minimum number of recursive calls in Binary Search?",
                 "answer": "1"
-            })(random_choice([16, 32, 64])),
+            })(random_choice([8, 10, 12])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the maximum number of iterations in Binary Search?",
                 "answer": str(n.bit_length())
-            })(random_choice([16, 32, 64])),
+            })(random_choice([8, 10, 12])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the minimum number of iterations in Binary Search?",
                 "answer": "1"
-            })(random_choice([16, 32, 64])),
+            })(random_choice([8, 10, 12])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the maximum number of steps in Binary Search?",
                 "answer": str(n.bit_length())
-            })(random_choice([16, 32, 64])),
+            })(random_choice([8, 10, 12])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the minimum number of steps in Binary Search?",
                 "answer": "1"
-            })(random_choice([16, 32, 64])),
+            })(random_choice([8, 10, 12])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the maximum number of comparisons in Binary Search?",
                 "answer": str(n.bit_length())
-            })(random_choice([16, 32, 64])),
+            })(random_choice([8, 10, 12])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the minimum number of comparisons in Binary Search?",
                 "answer": "1"
-            })(random_choice([16, 32, 64])),
+            })(random_choice([8, 10, 12])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the maximum number of steps in Binary Search?",
                 "answer": str(n.bit_length())
-            })(random_choice([16, 32, 64])),
+            })(random_choice([8, 10, 12])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the minimum number of steps in Binary Search?",
                 "answer": "1"
-            })(random_choice([16, 32, 64])),
+            })(random_choice([8, 10, 12])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the maximum number of elements checked in Binary Search?",
                 "answer": str(n.bit_length())
-            })(random_choice([16, 32, 64])),
+            })(random_choice([8, 10, 12])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the minimum number of elements checked in Binary Search?",
                 "answer": "1"
-            })(random_choice([16, 32, 64])),
+            })(random_choice([8, 10, 12])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the maximum number of recursive calls in Binary Search?",
                 "answer": str(n.bit_length())
-            })(random_choice([16, 32, 64])),
+            })(random_choice([8, 10, 12])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the minimum number of recursive calls in Binary Search?",
                 "answer": "1"
-            })(random_choice([16, 32, 64])),
+            })(random_choice([8, 10, 12])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the maximum number of iterations in Binary Search?",
                 "answer": str(n.bit_length())
-            })(random_choice([16, 32, 64]))
+            })(random_choice([8, 10, 12]))
         ]
     },
 
@@ -1123,103 +1123,103 @@ templates = {
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the maximum number of steps in Binary Search?",
                 "answer": str(n.bit_length())
-            })(random_choice([32, 64, 128, 256, 512])),
+            })(random_choice([8,10,12,15])),
             lambda: (lambda n: {
-                "question": f"If Binary Search takes {n.bit_length()} steps for size {n}, what is the minimum number of steps?",
+                "question":f"If Binary Search takes {n.bit_length()} steps for size {n}, what is the minimum number of steps?",
                 "answer": "1"
-            })(random_choice([32, 64, 128, 256, 512])),
+            })(random_choice([8,10,12,15])),
             lambda: (lambda n: {
                 "question": f"For array size {n}, what is the average number of comparisons in Binary Search?",
                 "answer": str(round(n.bit_length() / 2))
-            })(random_choice([32, 64, 128, 256, 512])),
+            })(random_choice([8,10,12,15])),
             lambda: (lambda n: {
                 "question": f"For array size {n}, what is the value of mid in the first step?",
                 "answer": str((0 + n - 1) // 2)
-            })(random_choice([32, 64, 128, 256, 512])),
+            })(random_choice([8,10,12,15])),
             lambda: (lambda n: {
                 "question": f"For array size {n}, what is the value of high at the start?",
                 "answer": str(n - 1)
-            })(random_choice([32, 64, 128, 256, 512])),
+            })(random_choice([8,10,12,15])),
             lambda: (lambda n: {
                 "question": f"For array size {n}, what is the value of low at the start?",
                 "answer": "0"
-            })(random_choice([32, 64, 128, 256, 512])),
+            })(random_choice([8,10,12,15])),
             lambda: (lambda n: {
                 "question": f"For array size {n}, what is the maximum value of mid?",
                 "answer": str(n - 1)
-            })(random_choice([32, 64, 128, 256, 512])),
+            })(random_choice([8,10,12,15])),
             lambda: (lambda n: {
                 "question": f"For array size {n}, what is the minimum value of mid?",
                 "answer": "0"
-            })(random_choice([32, 64, 128, 256, 512])),
+            })(random_choice([8,10,12,15])),
             lambda: (lambda n: {
                 "question": f"For array size {n}, what is the maximum number of recursive calls in Binary Search?",
                 "answer": str(n.bit_length())
-            })(random_choice([32, 64, 128, 256, 512])),
+            })(random_choice([8,10,12,15])),
             lambda: (lambda n: {
                 "question": f"For array size {n}, what is the maximum number of iterations in iterative Binary Search?",
                 "answer": str(n.bit_length())
-            })(random_choice([32, 64, 128, 256, 512])),
+            })(random_choice([8,10,12,15])),
             lambda: (lambda n: {
                 "question": f"For array size {n}, what is the minimum number of iterations in Binary Search?",
                 "answer": "1"
-            })(random_choice([32, 64, 128, 256, 512])),
+            })(random_choice([8,10,12,15])),
             lambda: (lambda n: {
                 "question": f"For array size {n}, what is the maximum number of comparisons to find a missing element?",
                 "answer": str(n.bit_length())
-            })(random_choice([32, 64, 128, 256, 512])),
+            })(random_choice([8,10,12,15])),
             lambda: (lambda n: {
                 "question": f"For array size {n}, what is the maximum number of comparisons to find the first element?",
                 "answer": str(n.bit_length())
-            })(random_choice([32, 64, 128, 256, 512])),
+            })(random_choice([8,10,12,15])),
             lambda: (lambda n: {
                 "question": f"For array size {n}, what is the maximum number of comparisons to find the last element?",
                 "answer": str(n.bit_length())
-            })(random_choice([32, 64, 128, 256, 512])),
+            })(random_choice([8,10,12,15])),
             lambda: (lambda n: {
                 "question": f"For array size {n}, what is the maximum number of comparisons to find the middle element?",
                 "answer": "1"
-            })(random_choice([32, 64, 128, 256, 512])),
+            })(random_choice([8,10,12,15])),
             lambda: (lambda n: {
                 "question": f"For array size {n}, what is the maximum number of comparisons to find an element not present?",
                 "answer": str(n.bit_length())
-            })(random_choice([32, 64, 128, 256, 512])),
+            })(random_choice([8,10,12,15])),
             lambda: (lambda n: {
                 "question": f"For array size {n}, what is the maximum number of comparisons to find an element at index {n//2}?",
                 "answer": "1"
-            })(random_choice([32, 64, 128, 256, 512])),
+            })(random_choice([8,10,12,15])),
             lambda: (lambda n: {
                 "question": f"For array size {n}, what is the maximum number of comparisons to find an element at index 0?",
                 "answer": str(n.bit_length())
-            })(random_choice([32, 64, 128, 256, 512])),
+            })(random_choice([8,10,12,15])),
             lambda: (lambda n: {
                 "question": f"For array size {n}, what is the maximum number of comparisons to find an element at index {n-1}?",
                 "answer": str(n.bit_length())
-            })(random_choice([32, 64, 128, 256, 512])),
+            })(random_choice([8,10,12,15])),
             lambda: (lambda n: {
                 "question": f"For array size {n}, what is the maximum number of comparisons to find an element at index {n//4}?",
                 "answer": str(n.bit_length() - 1)
-            })(random_choice([32, 64, 128, 256, 512])),
+            })(random_choice([8,10,12,15])),
             lambda: (lambda n: {
                 "question": f"For array size {n}, what is the maximum number of comparisons to find an element at index {3*n//4}?",
                 "answer": str(n.bit_length() - 1)
-            })(random_choice([32, 64, 128, 256, 512])),
+            })(random_choice([8,10,12,15])),
             lambda: (lambda n: {
                 "question": f"For array size {n}, what is the maximum number of comparisons to find an element at index {n//8}?",
                 "answer": str(n.bit_length() - 2)
-            })(random_choice([32, 64, 128, 256, 512])),
+            })(random_choice([8,10,12,15])),
             lambda: (lambda n: {
                 "question": f"For array size {n}, what is the maximum number of comparisons to find an element at index {7*n//8}?",
                 "answer": str(n.bit_length() - 2)
-            })(random_choice([32, 64, 128, 256, 512])),
+            })(random_choice([8,10,12,15])),
             lambda: (lambda n: {
                 "question": f"For array size {n}, what is the maximum number of comparisons to find an element at index {n//16}?",
                 "answer": str(n.bit_length() - 3)
-            })(random_choice([32, 64, 128, 256, 512])),
+            })(random_choice([8,10,12,15])),
             lambda: (lambda n: {
                 "question": f"For array size {n}, what is the maximum number of comparisons to find an element at index {15*n//16}?",
                 "answer": str(n.bit_length() - 3)
-            })(random_choice([32, 64, 128, 256, 512])),
+            })(random_choice([8,10,12,15])),
         ]
     },
 
@@ -1859,103 +1859,103 @@ templates = {
             lambda: (lambda n: {
                 "question": f"If Binary Search takes {n.bit_length()} steps for size {n}, what is the average comparisons?",
                 "answer": str(round(n.bit_length() / 2))
-            })(random_choice([128, 256, 1024])),
+            })(random_choice(([8,10,13,15,17]))),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the maximum number of comparisons in Binary Search?",
                 "answer": str(n.bit_length())
-            })(random_choice([100, 200, 400])),
+            })(random_choice(([8,10,13,15,17]))),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the minimum number of comparisons in Binary Search?",
                 "answer": "1"
-            })(random_choice([100, 200, 400])),
+            })(random_choice(([8,10,13,15,17]))),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the worst-case time complexity of Binary Search?",
                 "answer": "O(log n)"
-            })(random_choice([100, 200, 400])),
+            })(random_choice(([8,10,13,15,17]))),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the best-case time complexity of Binary Search?",
                 "answer": "O(1)"
-            })(random_choice([100, 200, 400])),
+            })(random_choice(([8,10,13,15,17]))),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, how many steps does Binary Search take in the worst case?",
                 "answer": str(n.bit_length())
-            })(random_choice([512, 1024, 2048])),
+            })(random_choice(([8,10,13,15,17]))),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the average number of comparisons in Binary Search?",
                 "answer": str(round(n.bit_length() / 2))
-            })(random_choice([512, 1024, 2048])),
+            })(random_choice(([8,10,13,15,17]))),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the maximum depth of recursion in Binary Search?",
                 "answer": str(n.bit_length())
-            })(random_choice([512, 1024, 2048])),
+            })(random_choice(([8,10,13,15,17]))),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the minimum depth of recursion in Binary Search?",
                 "answer": "1"
-            })(random_choice([512, 1024, 2048])),
+            })(random_choice(([10,13,15,17]))),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the maximum number of elements checked in Binary Search?",
                 "answer": str(n.bit_length())
-            })(random_choice([1000, 2000, 4000])),
+            })(random_choice(([8,10,13,15,17]))),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the minimum number of elements checked in Binary Search?",
                 "answer": "1"
-            })(random_choice([1000, 2000, 4000])),
+            })(random_choice(([8,10,13,15,17]))),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the maximum number of recursive calls in Binary Search?",
                 "answer": str(n.bit_length())
-            })(random_choice([1000, 2000, 4000])),
+            })(random_choice(([8,10,13,15,17]))),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the minimum number of recursive calls in Binary Search?",
                 "answer": "1"
-            })(random_choice([1000, 2000, 4000])),
+            })(random_choice(([8,10,13,15,17]))),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the maximum number of iterations in Binary Search?",
                 "answer": str(n.bit_length())
-            })(random_choice([1000, 2000, 4000])),
+            })(random_choice(([8,10,13,15,17]))),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the minimum number of iterations in Binary Search?",
                 "answer": "1"
-            })(random_choice([1000, 2000, 4000])),
+            })(random_choice(([8,10,13,15,17]))),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the maximum number of comparisons in Binary Search?",
                 "answer": str(n.bit_length())
-            })(random_choice([2048, 4096, 8192])),
+            })(random_choice(([8,10,13,15,17]))),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the minimum number of comparisons in Binary Search?",
                 "answer": "1"
-            })(random_choice([2048, 4096, 8192])),
+            })(random_choice(([8,10,13,15,17]))),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the maximum number of steps in Binary Search?",
                 "answer": str(n.bit_length())
-            })(random_choice([2048, 4096, 8192])),
+            })(random_choice(([8,10,13,15,17]))),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the minimum number of steps in Binary Search?",
                 "answer": "1"
-            })(random_choice([2048, 4096, 8192])),
+            })(random_choice(([8,10,13,15,17]))),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the maximum number of elements checked in Binary Search?",
                 "answer": str(n.bit_length())
-            })(random_choice([4096, 8192, 16384])),
+            })(random_choice([8,10,13,15,17])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the minimum number of elements checked in Binary Search?",
                 "answer": "1"
-            })(random_choice([4096, 8192, 16384])),
+            })(random_choice([8,10,13,15,17])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the maximum number of recursive calls in Binary Search?",
                 "answer": str(n.bit_length())
-            })(random_choice([4096, 8192, 16384])),
+            })(random_choice([8,10,13,15,17])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the minimum number of recursive calls in Binary Search?",
                 "answer": "1"
-            })(random_choice([4096, 8192, 16384])),
+            })(random_choice([8,10,13,15,17])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the maximum number of iterations in Binary Search?",
                 "answer": str(n.bit_length())
-            })(random_choice([4096, 8192, 16384])),
+            })(random_choice([8,10,13,15,17])),
             lambda: (lambda n: {
                 "question": f"For an array of size {n}, what is the minimum number of iterations in Binary Search?",
                 "answer": "1"
-            })(random_choice([4096, 8192, 16384]))
+            })(random_choice([8,10,13,15,17]))
         ]
     }
 }
