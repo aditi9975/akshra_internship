@@ -245,209 +245,301 @@ templates = {
             lambda: {
                 "question": "Match the term to its meaning in Binary Search:",
                 "pairs": {
+                    "low": "Ending index",
+                    "high": "Middle index",
+                    "mid": "Starting index"
+                },
+                "answer": {
                     "low": "Starting index",
                     "high": "Ending index",
                     "mid": "Middle index"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the concept to its property:",
                 "pairs": {
+                    "Divide and Conquer": "Recursive implementation",
+                    "Sorted Array": "Stack Space requirement",
+                    "Stack Space": "Precondition for algorithm"
+                },
+                "answer": {
                     "Divide and Conquer": "Reduces problem size by half",
                     "Sorted Array": "Precondition",
                     "Stack Space": "Recursive implementation"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the operation to its effect in Binary Search:",
                 "pairs": {
+                    "arr[mid] == key": "Search left half",
+                    "arr[mid] < key": "Element found",
+                    "arr[mid] > key": "Search right half"
+                },
+                "answer": {
                     "arr[mid] == key": "Element found",
                     "arr[mid] < key": "Search right half",
                     "arr[mid] > key": "Search left half"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the pointer to its update condition:",
                 "pairs": {
+                    "low": "arr[mid] > key",
+                    "high": "mid calculation",
+                    "mid": "arr[mid] < key"
+                },
+                "answer": {
                     "low": "arr[mid] < key",
                     "high": "arr[mid] > key",
                     "mid": "low + (high - low) // 2"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the complexity to the operation:",
                 "pairs": {
+                    "O(log n)": "Linear Search",
+                    "O(n)": "Best case Binary Search",
+                    "O(1)": "Binary Search"
+                },
+                "answer": {
                     "O(log n)": "Binary Search",
                     "O(n)": "Linear Search",
                     "O(1)": "Best case Binary Search"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the scenario to the result:",
                 "pairs": {
+                    "Key present": "Return -1",
+                    "Key absent": "Return index",
+                    "Empty array": "Continue searching"
+                },
+                "answer": {
                     "Key present": "Return index",
                     "Key absent": "Return -1",
                     "Empty array": "Return -1"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the algorithm to its requirement:",
                 "pairs": {
+                    "Binary Search": "Hash function",
+                    "Linear Search": "Sorted array",
+                    "Hashing": "Any array"
+                },
+                "answer": {
                     "Binary Search": "Sorted array",
                     "Linear Search": "Any array",
                     "Hashing": "Hash function"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the pointer to its initial value:",
                 "pairs": {
+                    "low": "n-1",
+                    "high": "(low + high) // 2",
+                    "mid": "0"
+                },
+                "answer": {
                     "low": "0",
                     "high": "n-1",
                     "mid": "(low + high) // 2"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the variant to its description:",
                 "pairs": {
+                    "First Occurrence": "Maximum in unimodal array",
+                    "Last Occurrence": "Leftmost index",
+                    "Peak Element": "Rightmost index"
+                },
+                "answer": {
                     "First Occurrence": "Leftmost index",
                     "Last Occurrence": "Rightmost index",
                     "Peak Element": "Maximum in unimodal array"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the search type to its result:",
                 "pairs": {
+                    "Lower Bound": "Equal to key",
+                    "Upper Bound": "First >= key",
+                    "Exact Match": "First > key"
+                },
+                "answer": {
                     "Lower Bound": "First >= key",
                     "Upper Bound": "First > key",
                     "Exact Match": "Equal to key"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the error to its cause:",
                 "pairs": {
+                    "IndexError": "Too many recursive calls",
+                    "Wrong result": "Access out of bounds",
+                    "StackOverflow": "Unsorted array"
+                },
+                "answer": {
                     "IndexError": "Access out of bounds",
                     "Wrong result": "Unsorted array",
                     "StackOverflow": "Too many recursive calls"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the step to its purpose:",
                 "pairs": {
+                    "Find mid": "Narrow search",
+                    "Compare": "Divide array",
+                    "Update pointers": "Check for key"
+                },
+                "answer": {
                     "Find mid": "Divide array",
                     "Compare": "Check for key",
                     "Update pointers": "Narrow search"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the use case to the algorithm:",
                 "pairs": {
+                    "Find square root": "Linear Search",
+                    "Find minimum in rotated array": "Linear Search",
+                    "Find in unsorted array": "Binary Search"
+                },
+                "answer": {
                     "Find square root": "Binary Search",
                     "Find minimum in rotated array": "Binary Search",
                     "Find in unsorted array": "Linear Search"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the complexity to the implementation:",
                 "pairs": {
+                    "Iterative": "O(n) time",
+                    "Recursive": "O(1) space",
+                    "Linear": "O(log n) space"
+                },
+                "answer": {
                     "Iterative": "O(1) space",
                     "Recursive": "O(log n) space",
                     "Linear": "O(n) time"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the pointer to its movement:",
                 "pairs": {
+                    "low": "Recomputed each step",
+                    "high": "Moves right",
+                    "mid": "Moves left"
+                },
+                "answer": {
                     "low": "Moves right",
                     "high": "Moves left",
                     "mid": "Recomputed each step"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the variant to its application:",
                 "pairs": {
+                    "Lower Bound": "Maximum in mountain array",
+                    "Upper Bound": "Insertion position",
+                    "Peak Element": "Next greater element"
+                },
+                "answer": {
                     "Lower Bound": "Insertion position",
                     "Upper Bound": "Next greater element",
                     "Peak Element": "Maximum in mountain array"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the error to its prevention:",
                 "pairs": {
+                    "Overflow": "Sort array first",
+                    "Infinite loop": "Use low + (high - low) // 2",
+                    "Wrong result": "Update pointers correctly"
+                },
+                "answer": {
                     "Overflow": "Use low + (high - low) // 2",
                     "Infinite loop": "Update pointers correctly",
                     "Wrong result": "Sort array first"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the search to its result:",
                 "pairs": {
+                    "Fixed point": "Minimum difference",
+                    "Missing number": "arr[i] == i",
+                    "Closest element": "Gap in sequence"
+                },
+                "answer": {
                     "Fixed point": "arr[i] == i",
                     "Missing number": "Gap in sequence",
                     "Closest element": "Minimum difference"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the pointer to its role:",
                 "pairs": {
+                    "low": "Current guess",
+                    "high": "Start of search",
+                    "mid": "End of search"
+                },
+                "answer": {
                     "low": "Start of search",
                     "high": "End of search",
                     "mid": "Current guess"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the following:",
                 "pairs": {
+                    "Binary Search": "O(n)",
+                    "Linear Search": "O(n log n)",
+                    "Sorting": "O(log n)"
+                },
+                "answer": {
                     "Binary Search": "O(log n)",
                     "Linear Search": "O(n)",
                     "Sorting": "O(n log n)"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the following:",
                 "pairs": {
+                    "Divide and Conquer": "Hash Table",
+                    "Brute Force": "Binary Search",
+                    "Hashing": "Linear Search"
+                },
+                "answer": {
                     "Divide and Conquer": "Binary Search",
                     "Brute Force": "Linear Search",
                     "Hashing": "Hash Table"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the following:",
                 "pairs": {
+                    "First element": "arr[(low+high)//2]",
+                    "Last element": "arr[0]",
+                    "Middle element": "arr[n-1]"
+                },
+                "answer": {
                     "First element": "arr[0]",
                     "Last element": "arr[n-1]",
                     "Middle element": "arr[(low+high)//2]"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the following:",
                 "pairs": {
+                    "Best case": "O(log n)",
+                    "Worst case": "O(1)",
+                    "Average case": "O(n)"
+                },
+                "answer": {
                     "Best case": "O(1)",
                     "Worst case": "O(log n)",
                     "Average case": "O(log n)"
-                },
-                "answer": "Correct mapping"
+                }
             }
         ],
         "ECQ": [
@@ -812,209 +904,301 @@ templates = {
             lambda: {
                 "question": "Match the term to its description:",
                 "pairs": {
+                    "low": "Middle index",
+                    "high": "Start index of search",
+                    "mid": "End index of search"
+                },
+                "answer": {
                     "low": "Start index of search",
                     "high": "End index of search",
                     "mid": "Middle index"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the concept to its property:",
                 "pairs": {
+                    "Binary Search": "O(n^2) time",
+                    "Linear Search": "O(log n) time",
+                    "Bubble Sort": "O(n) time"
+                },
+                "answer": {
                     "Binary Search": "O(log n) time",
                     "Linear Search": "O(n) time",
                     "Bubble Sort": "O(n^2) time"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the operation to its effect in Binary Search:",
                 "pairs": {
+                    "low = mid + 1": "Find middle",
+                    "high = mid - 1": "Search right half",
+                    "mid = (low + high) // 2": "Search left half"
+                },
+                "answer": {
                     "low = mid + 1": "Search right half",
                     "high = mid - 1": "Search left half",
                     "mid = (low + high) // 2": "Find middle"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the variant to its use:",
                 "pairs": {
+                    "Lower Bound": "Element == key",
+                    "Upper Bound": "First element >= key",
+                    "Exact Match": "First element > key"
+                },
+                "answer": {
                     "Lower Bound": "First element >= key",
                     "Upper Bound": "First element > key",
                     "Exact Match": "Element == key"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the step to its description:",
                 "pairs": {
+                    "Initialization": "Change low or high",
+                    "Comparison": "Set low and high",
+                    "Update": "Check arr[mid] vs key"
+                },
+                "answer": {
                     "Initialization": "Set low and high",
                     "Comparison": "Check arr[mid] vs key",
                     "Update": "Change low or high"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the pointer to its initial value:",
                 "pairs": {
+                    "low": "(low + high) // 2",
+                    "high": "0",
+                    "mid": "n-1"
+                },
+                "answer": {
                     "low": "0",
                     "high": "n-1",
                     "mid": "(low + high) // 2"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the scenario to the update:",
                 "pairs": {
+                    "arr[mid] < key": "return mid",
+                    "arr[mid] > key": "low = mid + 1",
+                    "arr[mid] == key": "high = mid - 1"
+                },
+                "answer": {
                     "arr[mid] < key": "low = mid + 1",
                     "arr[mid] > key": "high = mid - 1",
                     "arr[mid] == key": "return mid"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the algorithm to its requirement:",
                 "pairs": {
+                    "Binary Search": "Any array",
+                    "Linear Search": "Any array",
+                    "Selection Sort": "Sorted array"
+                },
+                "answer": {
                     "Binary Search": "Sorted array",
                     "Linear Search": "Any array",
                     "Selection Sort": "Any array"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the function to its purpose:",
                 "pairs": {
+                    "binarySearch": "Find first > key",
+                    "lower_bound": "Find element",
+                    "upper_bound": "Find first >= key"
+                },
+                "answer": {
                     "binarySearch": "Find element",
                     "lower_bound": "Find first >= key",
                     "upper_bound": "Find first > key"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the complexity to the algorithm:",
                 "pairs": {
+                    "O(log n)": "Bubble Sort",
+                    "O(n)": "Binary Search",
+                    "O(n^2)": "Linear Search"
+                },
+                "answer": {
                     "O(log n)": "Binary Search",
                     "O(n)": "Linear Search",
                     "O(n^2)": "Bubble Sort"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the update to the result:",
                 "pairs": {
+                    "low = mid + 1": "Found",
+                    "high = mid - 1": "Search right",
+                    "return mid": "Search left"
+                },
+                "answer": {
                     "low = mid + 1": "Search right",
                     "high = mid - 1": "Search left",
                     "return mid": "Found"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the term to its meaning:",
                 "pairs": {
+                    "Divide and conquer": "Function calls itself",
+                    "Base case": "Divide problem into subproblems",
+                    "Recursive call": "Stopping condition"
+                },
+                "answer": {
                     "Divide and conquer": "Divide problem into subproblems",
                     "Base case": "Stopping condition",
                     "Recursive call": "Function calls itself"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the pointer to its role:",
                 "pairs": {
+                    "low": "Current middle",
+                    "high": "Start of search",
+                    "mid": "End of search"
+                },
+                "answer": {
                     "low": "Start of search",
                     "high": "End of search",
                     "mid": "Current middle"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the variant to its result:",
                 "pairs": {
+                    "First occurrence": "Any index of key",
+                    "Last occurrence": "First index of key",
+                    "Any occurrence": "Last index of key"
+                },
+                "answer": {
                     "First occurrence": "First index of key",
                     "Last occurrence": "Last index of key",
                     "Any occurrence": "Any index of key"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the function to its input:",
                 "pairs": {
+                    "binarySearch(arr, low, high, key)": "Array, target",
+                    "lower_bound(arr, key)": "Array, target",
+                    "upper_bound(arr, key)": "Array, start, end, target"
+                },
+                "answer": {
                     "binarySearch(arr, low, high, key)": "Array, start, end, target",
                     "lower_bound(arr, key)": "Array, target",
                     "upper_bound(arr, key)": "Array, target"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the step to its action:",
                 "pairs": {
+                    "Check mid": "high = mid - 1",
+                    "Update low": "Compare arr[mid] and key",
+                    "Update high": "low = mid + 1"
+                },
+                "answer": {
                     "Check mid": "Compare arr[mid] and key",
                     "Update low": "low = mid + 1",
                     "Update high": "high = mid - 1"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the property to the algorithm:",
                 "pairs": {
+                    "Requires sorted data": "Merge Sort",
+                    "Works on any data": "Binary Search",
+                    "Stable sort": "Linear Search"
+                },
+                "answer": {
                     "Requires sorted data": "Binary Search",
                     "Works on any data": "Linear Search",
                     "Stable sort": "Merge Sort"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the result to the input:",
                 "pairs": {
+                    "Element found": "Update pointers",
+                    "Element not found": "Return index",
+                    "Search continues": "Return -1"
+                },
+                "answer": {
                     "Element found": "Return index",
                     "Element not found": "Return -1",
                     "Search continues": "Update pointers"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the update to the pointer:",
                 "pairs": {
+                    "low = mid + 1": "Find new middle",
+                    "high = mid - 1": "Move right",
+                    "mid = (low + high) // 2": "Move left"
+                },
+                "answer": {
                     "low = mid + 1": "Move right",
                     "high = mid - 1": "Move left",
                     "mid = (low + high) // 2": "Find new middle"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the search type to its result:",
                 "pairs": {
+                    "Lower bound": "Element == key",
+                    "Upper bound": "First >= key",
+                    "Exact match": "First > key"
+                },
+                "answer": {
                     "Lower bound": "First >= key",
                     "Upper bound": "First > key",
                     "Exact match": "Element == key"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the function to its output:",
                 "pairs": {
+                    "binarySearch": "Index",
+                    "lower_bound": "Index or -1",
+                    "upper_bound": "Index"
+                },
+                "answer": {
                     "binarySearch": "Index or -1",
                     "lower_bound": "Index",
                     "upper_bound": "Index"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the scenario to the result:",
                 "pairs": {
+                    "Key found": "Update pointers",
+                    "Key not found": "Return index",
+                    "Continue search": "Return -1"
+                },
+                "answer": {
                     "Key found": "Return index",
                     "Key not found": "Return -1",
                     "Continue search": "Update pointers"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the pointer to its update:",
                 "pairs": {
+                    "low": "(low + high) // 2",
+                    "high": "mid + 1",
+                    "mid": "mid - 1"
+                },
+                "answer": {
                     "low": "mid + 1",
                     "high": "mid - 1",
                     "mid": "(low + high) // 2"
-                },
-                "answer": "Correct mapping"
+                }
             },
         ],
         "ECQ": [
@@ -1557,200 +1741,288 @@ templates = {
             lambda: {
                 "question": "Match implementation to description:",
                 "pairs": {
+                    "Recursive Binary Search": "Uses loop",
+                    "Iterative Binary Search": "O(log n)",
+                    "Time Complexity": "Function calls itself"
+                },
+                "answer": {
                     "Recursive Binary Search": "Function calls itself",
                     "Iterative Binary Search": "Uses loop",
                     "Time Complexity": "O(log n)"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the term to its meaning in Binary Search:",
                 "pairs": {
+                    "low": "Middle index",
+                    "high": "Starting index",
+                    "mid": "Ending index"
+                },
+                "answer": {
                     "low": "Starting index",
                     "high": "Ending index",
                     "mid": "Middle index"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the concept to its property:",
                 "pairs": {
+                    "Divide and Conquer": "Recursive implementation",
+                    "Sorted Array": "Reduces problem size by half",
+                    "Stack Space": "Precondition"
+                },
+                "answer": {
                     "Divide and Conquer": "Reduces problem size by half",
                     "Sorted Array": "Precondition",
                     "Stack Space": "Recursive implementation"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the operation to its effect in Binary Search:",
                 "pairs": {
+                    "arr[mid] == key": "Search left half",
+                    "arr[mid] < key": "Element found",
+                    "arr[mid] > key": "Search right half"
+                },
+                "answer": {
                     "arr[mid] == key": "Element found",
                     "arr[mid] < key": "Search right half",
                     "arr[mid] > key": "Search left half"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the variant to its use:",
                 "pairs": {
+                    "Lower Bound": "Maximum in unimodal array",
+                    "Upper Bound": "First position >= key",
+                    "Peak Element": "First position > key"
+                },
+                "answer": {
                     "Lower Bound": "First position >= key",
                     "Upper Bound": "First position > key",
                     "Peak Element": "Maximum in unimodal array"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the data structure to Binary Search suitability:",
                 "pairs": {
+                    "Array": "Not applicable",
+                    "Linked List": "Efficient",
+                    "Hash Table": "Inefficient"
+                },
+                "answer": {
                     "Array": "Efficient",
                     "Linked List": "Inefficient",
                     "Hash Table": "Not applicable"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the pointer to its update condition:",
                 "pairs": {
+                    "low": "low + (high - low) // 2",
+                    "high": "arr[mid] < key",
+                    "mid": "arr[mid] > key"
+                },
+                "answer": {
                     "low": "arr[mid] < key",
                     "high": "arr[mid] > key",
                     "mid": "low + (high - low) // 2"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the complexity to the operation:",
                 "pairs": {
+                    "O(log n)": "Linear Search",
+                    "O(n)": "Best case Binary Search",
+                    "O(1)": "Binary Search"
+                },
+                "answer": {
                     "O(log n)": "Binary Search",
                     "O(n)": "Linear Search",
                     "O(1)": "Best case Binary Search"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the scenario to the result:",
                 "pairs": {
+                    "Key present": "Return -1",
+                    "Key absent": "Return index",
+                    "Empty array": "Continue search"
+                },
+                "answer": {
                     "Key present": "Return index",
                     "Key absent": "Return -1",
                     "Empty array": "Return -1"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the algorithm to its requirement:",
                 "pairs": {
+                    "Binary Search": "Hash function",
+                    "Linear Search": "Sorted array",
+                    "Hashing": "Any array"
+                },
+                "answer": {
                     "Binary Search": "Sorted array",
                     "Linear Search": "Any array",
                     "Hashing": "Hash function"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the pointer to its initial value:",
                 "pairs": {
+                    "low": "(low + high) // 2",
+                    "high": "0",
+                    "mid": "n-1"
+                },
+                "answer": {
                     "low": "0",
                     "high": "n-1",
                     "mid": "(low + high) // 2"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the variant to its description:",
                 "pairs": {
+                    "First Occurrence": "Maximum in unimodal array",
+                    "Last Occurrence": "Leftmost index",
+                    "Peak Element": "Rightmost index"
+                },
+                "answer": {
                     "First Occurrence": "Leftmost index",
                     "Last Occurrence": "Rightmost index",
                     "Peak Element": "Maximum in unimodal array"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the search type to its result:",
                 "pairs": {
+                    "Lower Bound": "Equal to key",
+                    "Upper Bound": "First >= key",
+                    "Exact Match": "First > key"
+                },
+                "answer": {
                     "Lower Bound": "First >= key",
                     "Upper Bound": "First > key",
                     "Exact Match": "Equal to key"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the error to its cause:",
                 "pairs": {
+                    "IndexError": "Too many recursive calls",
+                    "Wrong result": "Access out of bounds",
+                    "StackOverflow": "Unsorted array"
+                },
+                "answer": {
                     "IndexError": "Access out of bounds",
                     "Wrong result": "Unsorted array",
                     "StackOverflow": "Too many recursive calls"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the step to its purpose:",
                 "pairs": {
+                    "Find mid": "Check for key",
+                    "Compare": "Narrow search",
+                    "Update pointers": "Divide array"
+                },
+                "answer": {
                     "Find mid": "Divide array",
                     "Compare": "Check for key",
                     "Update pointers": "Narrow search"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the use case to the algorithm:",
                 "pairs": {
+                    "Find square root": "Linear Search",
+                    "Find minimum in rotated array": "Linear Search",
+                    "Find in unsorted array": "Binary Search"
+                },
+                "answer": {
                     "Find square root": "Binary Search",
                     "Find minimum in rotated array": "Binary Search",
                     "Find in unsorted array": "Linear Search"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the complexity to the implementation:",
                 "pairs": {
+                    "Iterative": "O(n) time",
+                    "Recursive": "O(1) space",
+                    "Linear": "O(log n) space"
+                },
+                "answer": {
                     "Iterative": "O(1) space",
                     "Recursive": "O(log n) space",
                     "Linear": "O(n) time"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the pointer to its movement:",
                 "pairs": {
+                    "low": "Recomputed each step",
+                    "high": "Moves right",
+                    "mid": "Moves left"
+                },
+                "answer": {
                     "low": "Moves right",
                     "high": "Moves left",
                     "mid": "Recomputed each step"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the variant to its application:",
                 "pairs": {
+                    "Lower Bound": "Maximum in mountain array",
+                    "Upper Bound": "Insertion position",
+                    "Peak Element": "Next greater element"
+                },
+                "answer": {
                     "Lower Bound": "Insertion position",
                     "Upper Bound": "Next greater element",
                     "Peak Element": "Maximum in mountain array"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the error to its prevention:",
                 "pairs": {
+                    "Overflow": "Sort array first",
+                    "Infinite loop": "Use low + (high - low) // 2",
+                    "Wrong result": "Update pointers correctly"
+                },
+                "answer": {
                     "Overflow": "Use low + (high - low) // 2",
                     "Infinite loop": "Update pointers correctly",
                     "Wrong result": "Sort array first"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the search to its result:",
                 "pairs": {
+                    "Fixed point": "Minimum difference",
+                    "Missing number": "arr[i] == i",
+                    "Closest element": "Gap in sequence"
+                },
+                "answer": {
                     "Fixed point": "arr[i] == i",
                     "Missing number": "Gap in sequence",
                     "Closest element": "Minimum difference"
-                },
-                "answer": "Correct mapping"
+                }
             },
             lambda: {
                 "question": "Match the pointer to its role:",
                 "pairs": {
+                    "low": "Current guess",
+                    "high": "Start of search",
+                    "mid": "End of search"
+                },
+                "answer": {
                     "low": "Start of search",
                     "high": "End of search",
                     "mid": "Current guess"
-                },
-                "answer": "Correct mapping"
+                }
             }
         ],
         "ECQ": [
