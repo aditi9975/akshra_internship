@@ -1481,8 +1481,8 @@ selection_sort_templates = {
     })(random_choice([6, 11, 13])),
 
     lambda: (lambda n: {
-        "question": f"In Selection Sort, how many elements remain unsorted after {p} passes for an array of size {n}?",
-        "answer": str(n - p)
+        "question": f"In Selection Sort, how many elements remain unsorted after {1} passes for an array of size {n}?",
+        "answer": str(n - 1)
     })(random_choice([5, 7, 9])),  # p = 5,7,9 as example number of passes
 
     lambda: (lambda n: {
